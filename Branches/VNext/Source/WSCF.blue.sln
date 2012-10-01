@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1CB5FCAB-9F62-421B-9F75-D1CD37D9CDD6}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionInfo.cs = SolutionInfo.cs
+		WSCF.blue.5.0.ReSharper = WSCF.blue.5.0.ReSharper
+		WSCF.blue.5.1.ReSharper = WSCF.blue.5.1.ReSharper
+		WSCF.blue.snk = WSCF.blue.snk
+		WSCF.blue.vsmdi = WSCF.blue.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework.csproj", "{A7B7F4EC-E09E-4996-89B9-4B9C1F4C8E4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Tests", "Framework.Tests\Framework.Tests.csproj", "{7BEC5D47-7180-44A3-8E49-F8F772B1E2C9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs04
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Framework\\Framework.csproj
+		SccProjectName1 = Framework
+		SccLocalPath1 = Framework
+		SccProjectUniqueName2 = Framework.Tests\\Framework.Tests.csproj
+		SccProjectName2 = Framework.Tests
+		SccLocalPath2 = Framework.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WSCF.blue.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7B7F4EC-E09E-4996-89B9-4B9C1F4C8E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B7F4EC-E09E-4996-89B9-4B9C1F4C8E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B7F4EC-E09E-4996-89B9-4B9C1F4C8E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B7F4EC-E09E-4996-89B9-4B9C1F4C8E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEC5D47-7180-44A3-8E49-F8F772B1E2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEC5D47-7180-44A3-8E49-F8F772B1E2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEC5D47-7180-44A3-8E49-F8F772B1E2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEC5D47-7180-44A3-8E49-F8F772B1E2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

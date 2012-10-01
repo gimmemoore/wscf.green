@@ -1,0 +1,25 @@
+﻿CODE GENERATION
+ServiceGenerator
+(1)	Generate a service given an interface contract (or a wsdl)  and a servicegenerator options 
+
+ClientGenerator
+(1)	Generate a client proxy given an interface contract  (or a wsdl) and client generation options
+
+DataContract Generator
+(1)	Generate a data contract given a set of schemas (with options to use DCG or XS) and an Options class
+(2)	Given the set of schemas provide a facility to extract all the types so users can select which ones to generate for and optional class names to map to them
+
+Message Contract Generator
+(1)	Special case of DCG allows to select the elements and their correct names which form the root of the message
+(2) Wrapping tests 
+
+ConfigurationGenerator
+(1)	Generate a service configuration 
+(2)	Generate a client configuration
+(3)	Merge with existing service / client configuration
+
+
+Related features
+(1)	Reconstruct existing service - / Contract Inference : for a given set 
+of Urls, WSCF downloads the metadata and allows the user to regenerate 
+services with a single set of data contracts.

@@ -1,0 +1,238 @@
+<Metadata xmlns="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+  <wsx:MetadataSection Dialect="http://schemas.xmlsoap.org/wsdl/" Identifier="http://www.thinktecture.com" xmlns="">
+    <definitions name="RestaurantService" targetNamespace="http://www.thinktecture.com" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:import0="urn:thinktecture-com:demos:restaurantservice:messages:v1" xmlns:tns="http://www.thinktecture.com" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+      <wsp:Policy wsu:Id="NetTcpBinding_RestaurantServiceInterface_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsp:ExactlyOne>
+          <wsp:All>
+            <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1"/>
+            <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+              <wsp:Policy>
+                <sp:TransportToken>
+                  <wsp:Policy>
+                    <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                      <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                    </msf:WindowsTransportSecurity>
+                  </wsp:Policy>
+                </sp:TransportToken>
+                <sp:AlgorithmSuite>
+                  <wsp:Policy>
+                    <sp:Basic256/>
+                  </wsp:Policy>
+                </sp:AlgorithmSuite>
+                <sp:Layout>
+                  <wsp:Policy>
+                    <sp:Strict/>
+                  </wsp:Policy>
+                </sp:Layout>
+              </wsp:Policy>
+            </sp:TransportBinding>
+            <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+          </wsp:All>
+        </wsp:ExactlyOne>
+      </wsp:Policy>
+      <types>
+        <xsd:schema>
+          <xsd:import schemaLocation="RestaurantMessages.xsd" namespace="urn:thinktecture-com:demos:restaurantservice:messages:v1"/>
+        </xsd:schema>
+      </types>
+      <message name="getRestaurantsIn">
+        <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+        <part name="parameters" element="import0:getRestaurants"/>
+      </message>
+      <message name="getRestaurantsOut">
+        <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+        <part name="parameters" element="import0:getRestaurantsResponse"/>
+      </message>
+      <message name="addRestaurantIn">
+        <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+        <part name="parameters" element="import0:addRestaurant"/>
+      </message>
+      <message name="rateRestaurantIn">
+        <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+        <part name="parameters" element="import0:rateRestaurant"/>
+      </message>
+      <portType name="RestaurantServiceInterface">
+        <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+        <operation name="getRestaurants">
+          <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+          <input message="tns:getRestaurantsIn"/>
+          <output message="tns:getRestaurantsOut"/>
+        </operation>
+        <operation name="addRestaurant">
+          <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+          <input message="tns:addRestaurantIn"/>
+        </operation>
+        <operation name="rateRestaurant">
+          <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"/>
+          <input message="tns:rateRestaurantIn"/>
+        </operation>
+      </portType>
+      <binding name="BasicHttpBinding_RestaurantServiceInterface" type="tns:RestaurantServiceInterface">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getRestaurants">
+          <soap:operation soapAction="http://www.thinktecture.com:getRestaurantsIn" style="document"/>
+          <input>
+            <soap:body use="literal"/>
+          </input>
+          <output>
+            <soap:body use="literal"/>
+          </output>
+        </operation>
+        <operation name="addRestaurant">
+          <soap:operation soapAction="http://www.thinktecture.com:addRestaurantIn" style="document"/>
+          <input>
+            <soap:body use="literal"/>
+          </input>
+        </operation>
+        <operation name="rateRestaurant">
+          <soap:operation soapAction="http://www.thinktecture.com:rateRestaurantIn" style="document"/>
+          <input>
+            <soap:body use="literal"/>
+          </input>
+        </operation>
+      </binding>
+      <binding name="NetTcpBinding_RestaurantServiceInterface" type="tns:RestaurantServiceInterface">
+        <wsp:PolicyReference URI="#NetTcpBinding_RestaurantServiceInterface_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+        <soap12:binding transport="http://schemas.microsoft.com/soap/tcp"/>
+        <operation name="getRestaurants">
+          <soap12:operation soapAction="http://www.thinktecture.com:getRestaurantsIn" style="document"/>
+          <input>
+            <soap12:body use="literal"/>
+          </input>
+          <output>
+            <soap12:body use="literal"/>
+          </output>
+        </operation>
+        <operation name="addRestaurant">
+          <soap12:operation soapAction="http://www.thinktecture.com:addRestaurantIn" style="document"/>
+          <input>
+            <soap12:body use="literal"/>
+          </input>
+        </operation>
+        <operation name="rateRestaurant">
+          <soap12:operation soapAction="http://www.thinktecture.com:rateRestaurantIn" style="document"/>
+          <input>
+            <soap12:body use="literal"/>
+          </input>
+        </operation>
+      </binding>
+      <service name="RestaurantServicePort">
+        <port name="RestaurantServicePort" binding="tns:BasicHttpBinding_RestaurantServiceInterface">
+          <soap:address location="http://localhost:8080/myservice.svc"/>
+        </port>
+        <port name="RestaurantServiceSOAP12Port" binding="tns:NetTcpBinding_RestaurantServiceInterface">
+          <soap12:address location="net.tcp://localhost:8080/myservice.svc"/>
+        </port>
+      </service>
+    </definitions>
+  </wsx:MetadataSection>
+  <wsx:MetadataSection Dialect="http://www.w3.org/2001/XMLSchema" Identifier="urn:thinktecture-com:demos:restaurantservice:data:v1" xmlns="">
+    <xs:schema elementFormDefault="qualified" targetNamespace="urn:thinktecture-com:demos:restaurantservice:data:v1" id="RestaurantData" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mstns="urn:thinktecture-com:demos:restaurantservice:data:v1" xmlns="urn:thinktecture-com:demos:restaurantservice:data:v1">
+      <xs:element name="FooCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="FooItem" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="MyChoice">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="0">
+            <xs:element ref="FooCollection"/>
+            <xs:element minOccurs="0" maxOccurs="1" name="MoreData1" type="xs:string"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:attributeGroup name="myattribgroup">
+        <xs:attribute name="someattribute1" type="xs:integer"/>
+        <xs:attribute name="someattribute2" type="xs:string"/>
+      </xs:attributeGroup>
+      <xs:complexType name="restaurantInfo">
+        <xs:sequence>
+          <xs:element name="restaurantID" type="xs:int"/>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="address" type="xs:string"/>
+          <xs:element name="city" type="xs:string"/>
+          <xs:element name="state" type="xs:string"/>
+          <xs:element name="zip" type="xs:string"/>
+          <xs:element name="openFrom" type="xs:time"/>
+          <xs:element name="openTo" type="xs:time"/>
+          <xs:element name="choice" type="MyChoice"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="myattribgroup"/>
+      </xs:complexType>
+      <xs:simpleType name="Sizes">
+        <xs:restriction base="xs:decimal">
+          <xs:enumeration value="10.5"/>
+          <xs:enumeration value="9"/>
+          <xs:enumeration value="8"/>
+          <xs:enumeration value="11"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="shoeSizes">
+        <xs:simpleType>
+          <xs:list itemType="Sizes"/>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:complexType name="restaurantsList">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="11" name="restaurant" type="restaurantInfo"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:simpleType name="ratingInfo">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="poor"/>
+          <xs:enumeration value="good"/>
+          <xs:enumeration value="veryGood"/>
+          <xs:enumeration value="excellent"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+  </wsx:MetadataSection>
+  <wsx:MetadataSection Dialect="http://www.w3.org/2001/XMLSchema" Identifier="urn:thinktecture-com:demos:restaurantservice:headerdata:v1" xmlns="">
+    <xs:schema elementFormDefault="qualified" targetNamespace="urn:thinktecture-com:demos:restaurantservice:headerdata:v1" id="RestaurantHeaderData" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mstns="urn:thinktecture-com:demos:restaurantservice:headerdata:v1" xmlns="urn:thinktecture-com:demos:restaurantservice:headerdata:v1">
+      <xs:complexType name="credentials">
+        <xs:sequence>
+          <xs:element name="username" type="xs:string"/>
+          <xs:element name="password" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="userCredentials" type="credentials"/>
+    </xs:schema>
+  </wsx:MetadataSection>
+  <wsx:MetadataSection Dialect="http://www.w3.org/2001/XMLSchema" Identifier="urn:thinktecture-com:demos:restaurantservice:messages:v1" xmlns="">
+    <xs:schema elementFormDefault="qualified" targetNamespace="urn:thinktecture-com:demos:restaurantservice:messages:v1" id="RestaurantMessages" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:import="urn:thinktecture-com:demos:restaurantservice:data:v1" xmlns:mstns="urn:thinktecture-com:demos:restaurantservice:messages:v1" xmlns="urn:thinktecture-com:demos:restaurantservice:messages:v1">
+      <xs:import schemaLocation="RestaurantData.xsd" id="RestaurantData" namespace="urn:thinktecture-com:demos:restaurantservice:data:v1"/>
+      <xs:element name="getRestaurants">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="zip" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getRestaurantsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="restaurants" type="import:restaurantsList"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addRestaurant">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="restaurant" type="import:restaurantInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="rateRestaurant">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="restaurantID" type="xs:int"/>
+            <xs:element name="rate" type="import:ratingInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsx:MetadataSection>
+</Metadata>

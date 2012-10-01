@@ -1,0 +1,7 @@
+// ---------------------------------------------------------------------------------
+// File:            [Insert filename here]
+// Description:     [Insert the description]
+//
+// Author:          [Insert author's name]
+// Date Created:    [Insert the creation date]
+// ---------------------------------------------------------------------------------

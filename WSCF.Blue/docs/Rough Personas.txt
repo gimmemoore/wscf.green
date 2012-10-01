@@ -1,0 +1,25 @@
+Overview
+------------
+A rough list of "personas" or users of WSCF who are interested in extending
+the tools basic behavior. These may become valid use cases as development 
+progresses.
+
+
+List
+-------
+
+(a) The custom project developer : A doesnt like the VS OOB projects and templates and has written his own. Now A wants to generate all the files for a webservice contract, but will choose how to place them into his project. How does he do this? 
+
+(b) Settings persistence : B wants the end result of the wizard to be saved to a specified location and re-loaded.. How can he do that 
+
+(C) SVC generation and customization : C wants to customize the SVC generation into different endpoints. How does he do that? (Hint) He is quite amenable to extending the "InferOperations" dialog to enter the service name or to add 
+an extra page to set a mapping. 
+
+(D) Incremental Update : D wants to be able to add new methods to an existing WSDL without building from scratch. How does (s)he do that ? 
+
+
+
+
+
+
+	

@@ -1,0 +1,164 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86584563-214A-48BA-8E33-280C5D57B4AF}"
+	ProjectSection(SolutionItems) = preProject
+		Complete.vsmdi = Complete.vsmdi
+		Developer.WSCF.blue.addin = Developer.WSCF.blue.addin
+		FileHeaderTemplate.txt = FileHeaderTemplate.txt
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		SolutionInfo.cs = SolutionInfo.cs
+		WSCF.blue.addin = WSCF.blue.addin
+		WSCF.Blue.API.vsmdi = WSCF.Blue.API.vsmdi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{C4BECE10-5BFD-435D-91E3-A3E6C3526960}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1ECE8D7-4EA8-47B1-9E05-F3E35918D6EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Z.Installers", "Z.Installers", "{8DD06F40-52B8-4F04-8260-0FE4270D6581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5B4866F6-C078-4A26-85C3-552C49CAD152}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{6BDC5884-6026-4526-8976-E00DEA9A9EC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{E1740F01-E05C-4DC3-874C-F1ED375C1D21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{26844D8C-CABB-4EC2-A264-9DEC2976B0F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{77371FDF-0C65-43AD-8164-8643910FF927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment", "Common\Environment\Environment.csproj", "{C8F160D7-2CDF-4E35-A4DC-91B0F2364E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata", "Extensions\Metadata\Metadata.csproj", "{30C58D77-7B92-4B2F-BA19-A0D5603A4C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddIn", "Hosts\AddIn\AddIn.csproj", "{2ED38673-D44A-415A-B3D9-634BD10EF870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGeneration", "Services\CodeGeneration\CodeGeneration.csproj", "{C95E299D-A15E-4FD8-AC50-D3645F0CAA48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDescription", "Services\ServiceDescription\ServiceDescription.csproj", "{85343FA9-67CC-4DEF-9BE8-514BC542B395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WsdlWizard", "UI\WsdlWizard\WsdlWizard.csproj", "{D579D21C-5765-493A-AE08-3275253A72C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dialogs", "UI\Dialogs\Dialogs.csproj", "{45A08196-5300-43CC-AFFF-A8A5B25CAE24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata.Tests", "Extensions\Metadata.Tests\Metadata.Tests.csproj", "{A626E623-598B-445D-A8EA-217EFB64E5E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGeneration.Tests", "Services\CodeGeneration.Tests\CodeGeneration.Tests.csproj", "{DF304F66-D984-4CA2-8A8A-19F7EC5C957F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDescription.Tests", "Services\ServiceDescription.Tests\ServiceDescription.Tests.csproj", "{3CF98F14-3F9D-4471-B691-ED3854B605FD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Environment\\Environment.csproj
+		SccProjectTopLevelParentUniqueName1 = WSCF.Blue.API.sln
+		SccProjectName1 = Common/Environment
+		SccLocalPath1 = Common\\Environment
+		SccProjectUniqueName2 = Extensions\\Metadata.Tests\\Metadata.Tests.csproj
+		SccProjectTopLevelParentUniqueName2 = WSCF.Blue.API.sln
+		SccProjectName2 = Extensions/Metadata.Tests
+		SccLocalPath2 = Extensions\\Metadata.Tests
+		SccProjectUniqueName3 = Extensions\\Metadata\\Metadata.csproj
+		SccProjectTopLevelParentUniqueName3 = WSCF.Blue.API.sln
+		SccProjectName3 = Extensions/Metadata
+		SccLocalPath3 = Extensions\\Metadata
+		SccProjectUniqueName4 = Hosts\\AddIn\\AddIn.csproj
+		SccProjectTopLevelParentUniqueName4 = WSCF.Blue.API.sln
+		SccProjectName4 = Hosts/AddIn
+		SccLocalPath4 = Hosts\\AddIn
+		SccProjectUniqueName5 = Services\\CodeGeneration\\CodeGeneration.csproj
+		SccProjectTopLevelParentUniqueName5 = WSCF.Blue.API.sln
+		SccProjectName5 = Services/CodeGeneration
+		SccLocalPath5 = Services\\CodeGeneration
+		SccProjectUniqueName6 = Services\\ServiceDescription\\ServiceDescription.csproj
+		SccProjectTopLevelParentUniqueName6 = WSCF.Blue.API.sln
+		SccProjectName6 = Services/ServiceDescription
+		SccLocalPath6 = Services\\ServiceDescription
+		SccProjectUniqueName7 = UI\\Dialogs\\Dialogs.csproj
+		SccProjectTopLevelParentUniqueName7 = WSCF.Blue.API.sln
+		SccProjectName7 = UI/Dialogs
+		SccLocalPath7 = UI\\Dialogs
+		SccProjectUniqueName8 = UI\\WsdlWizard\\WsdlWizard.csproj
+		SccProjectTopLevelParentUniqueName8 = WSCF.Blue.API.sln
+		SccProjectName8 = UI/WsdlWizard
+		SccLocalPath8 = UI\\WsdlWizard
+		SccProjectUniqueName9 = Services\\CodeGeneration.Tests\\CodeGeneration.Tests.csproj
+		SccProjectTopLevelParentUniqueName9 = WSCF.Blue.API.sln
+		SccProjectName9 = Services/CodeGeneration.Tests
+		SccLocalPath9 = Services\\CodeGeneration.Tests
+		SccProjectUniqueName10 = Services\\ServiceDescription.Tests\\ServiceDescription.Tests.csproj
+		SccProjectTopLevelParentUniqueName10 = WSCF.Blue.API.sln
+		SccProjectName10 = Services/ServiceDescription.Tests
+		SccLocalPath10 = Services\\ServiceDescription.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F160D7-2CDF-4E35-A4DC-91B0F2364E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F160D7-2CDF-4E35-A4DC-91B0F2364E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F160D7-2CDF-4E35-A4DC-91B0F2364E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F160D7-2CDF-4E35-A4DC-91B0F2364E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C58D77-7B92-4B2F-BA19-A0D5603A4C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C58D77-7B92-4B2F-BA19-A0D5603A4C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C58D77-7B92-4B2F-BA19-A0D5603A4C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C58D77-7B92-4B2F-BA19-A0D5603A4C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED38673-D44A-415A-B3D9-634BD10EF870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED38673-D44A-415A-B3D9-634BD10EF870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED38673-D44A-415A-B3D9-634BD10EF870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED38673-D44A-415A-B3D9-634BD10EF870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95E299D-A15E-4FD8-AC50-D3645F0CAA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95E299D-A15E-4FD8-AC50-D3645F0CAA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95E299D-A15E-4FD8-AC50-D3645F0CAA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95E299D-A15E-4FD8-AC50-D3645F0CAA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85343FA9-67CC-4DEF-9BE8-514BC542B395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85343FA9-67CC-4DEF-9BE8-514BC542B395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85343FA9-67CC-4DEF-9BE8-514BC542B395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85343FA9-67CC-4DEF-9BE8-514BC542B395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D579D21C-5765-493A-AE08-3275253A72C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D579D21C-5765-493A-AE08-3275253A72C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D579D21C-5765-493A-AE08-3275253A72C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D579D21C-5765-493A-AE08-3275253A72C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A08196-5300-43CC-AFFF-A8A5B25CAE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A08196-5300-43CC-AFFF-A8A5B25CAE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A08196-5300-43CC-AFFF-A8A5B25CAE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A08196-5300-43CC-AFFF-A8A5B25CAE24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A626E623-598B-445D-A8EA-217EFB64E5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A626E623-598B-445D-A8EA-217EFB64E5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A626E623-598B-445D-A8EA-217EFB64E5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A626E623-598B-445D-A8EA-217EFB64E5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF304F66-D984-4CA2-8A8A-19F7EC5C957F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF304F66-D984-4CA2-8A8A-19F7EC5C957F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF304F66-D984-4CA2-8A8A-19F7EC5C957F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF304F66-D984-4CA2-8A8A-19F7EC5C957F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF98F14-3F9D-4471-B691-ED3854B605FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF98F14-3F9D-4471-B691-ED3854B605FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF98F14-3F9D-4471-B691-ED3854B605FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF98F14-3F9D-4471-B691-ED3854B605FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B4866F6-C078-4A26-85C3-552C49CAD152} = {C4BECE10-5BFD-435D-91E3-A3E6C3526960}
+		{6BDC5884-6026-4526-8976-E00DEA9A9EC0} = {C4BECE10-5BFD-435D-91E3-A3E6C3526960}
+		{E1740F01-E05C-4DC3-874C-F1ED375C1D21} = {C4BECE10-5BFD-435D-91E3-A3E6C3526960}
+		{26844D8C-CABB-4EC2-A264-9DEC2976B0F2} = {C4BECE10-5BFD-435D-91E3-A3E6C3526960}
+		{77371FDF-0C65-43AD-8164-8643910FF927} = {C4BECE10-5BFD-435D-91E3-A3E6C3526960}
+		{A626E623-598B-445D-A8EA-217EFB64E5E6} = {C1ECE8D7-4EA8-47B1-9E05-F3E35918D6EA}
+		{DF304F66-D984-4CA2-8A8A-19F7EC5C957F} = {C1ECE8D7-4EA8-47B1-9E05-F3E35918D6EA}
+		{3CF98F14-3F9D-4471-B691-ED3854B605FD} = {C1ECE8D7-4EA8-47B1-9E05-F3E35918D6EA}
+		{C8F160D7-2CDF-4E35-A4DC-91B0F2364E60} = {5B4866F6-C078-4A26-85C3-552C49CAD152}
+		{30C58D77-7B92-4B2F-BA19-A0D5603A4C6C} = {6BDC5884-6026-4526-8976-E00DEA9A9EC0}
+		{2ED38673-D44A-415A-B3D9-634BD10EF870} = {E1740F01-E05C-4DC3-874C-F1ED375C1D21}
+		{C95E299D-A15E-4FD8-AC50-D3645F0CAA48} = {26844D8C-CABB-4EC2-A264-9DEC2976B0F2}
+		{85343FA9-67CC-4DEF-9BE8-514BC542B395} = {26844D8C-CABB-4EC2-A264-9DEC2976B0F2}
+		{D579D21C-5765-493A-AE08-3275253A72C1} = {77371FDF-0C65-43AD-8164-8643910FF927}
+		{45A08196-5300-43CC-AFFF-A8A5B25CAE24} = {77371FDF-0C65-43AD-8164-8643910FF927}
+	EndGlobalSection
+EndGlobal

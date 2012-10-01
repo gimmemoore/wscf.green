@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7B7F4EC-E09E-4996-89B9-4B9C1F4C8E4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thinktecture.Wscf.Framework</RootNamespace>
+    <AssemblyName>Thinktecture.Wscf.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\WSCF.blue.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="CodeGeneration\CodeGenerationException.cs" />
+    <Compile Include="CodeGeneration\CodeGenerator.cs" />
+    <Compile Include="CodeGeneration\CodeGeneratorContext.cs" />
+    <Compile Include="CodeGeneration\CodeGeneratorMode.cs" />
+    <Compile Include="CodeGeneration\CodeLanguage.cs" />
+    <Compile Include="CodeGeneration\CodeGeneratorOptions.cs" />
+    <Compile Include="CodeGeneration\DataContractGenerator.cs" />
+    <Compile Include="CodeGeneration\FaultImportOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\ICodeGenerator.cs" />
+    <Compile Include="CodeGeneration\ICodeGeneratorContext.cs" />
+    <Compile Include="CodeGeneration\IDataContractGenerator.cs" />
+    <Compile Include="CodeGeneration\IFaultImportOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\IServiceContractGeneratorFactory.cs" />
+    <Compile Include="CodeGeneration\IServiceContractGenerationOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\IWrappedOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\IWsdlImporterFactory.cs" />
+    <Compile Include="CodeGeneration\IXmlSerializerImportOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\IXsdDataContractImporterBuilder.cs" />
+    <Compile Include="CodeGeneration\SerializerMode.cs" />
+    <Compile Include="CodeGeneration\ServiceContractGeneratorFactory.cs" />
+    <Compile Include="CodeGeneration\ServiceContractGenerationOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\TargetFrameworkVersion.cs" />
+    <Compile Include="CodeGeneration\WrappedOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\WsdlImporterFactory.cs" />
+    <Compile Include="CodeGeneration\XmlSerializerImportOptionsBuilder.cs" />
+    <Compile Include="CodeGeneration\XsdDataContractImporterBuilder.cs" />
+    <Compile Include="Contract\IWsdlImporter.cs" />
+    <Compile Include="Contract\NativeWsdlImporter.cs" />
+    <Compile Include="Contract\ServiceDefinition.cs" />
+    <Compile Include="Contract\ServiceDefinitionImporter.cs" />
+    <Compile Include="Contract\WsdlImportResult.cs" />
+    <Compile Include="ExceptionExtensions.cs" />
+    <Compile Include="Metadata\DiscoveryMetadataResolver.cs" />
+    <Compile Include="Metadata\IMetadataDiscovery.cs" />
+    <Compile Include="Metadata\IMexMetadataResolver.cs" />
+    <Compile Include="Metadata\IXmlMetadataResolver.cs" />
+    <Compile Include="Metadata\MetadataDiscovery.cs" />
+    <Compile Include="Metadata\MetadataDiscoveryException.cs" />
+    <Compile Include="Metadata\MetadataFileType.cs" />
+    <Compile Include="Metadata\MexMetadataDiscoveryException.cs" />
+    <Compile Include="Metadata\MexMetadataResolver.cs" />
+    <Compile Include="Metadata\XmlMetadataResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

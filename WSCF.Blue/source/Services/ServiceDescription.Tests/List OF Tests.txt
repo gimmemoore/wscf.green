@@ -1,0 +1,17 @@
+﻿WSCF – Services 
+From the Tests perspective
+SERVICE DESCRIPTION
+Wsdl Generation
+(1)	Pass in a set of schemas to the SDBuilder 
+(2)	Choose InferOperations to get a list of operations and their message exchange patterns or enter in operationMessageMap which has operation, mep, message and associated header and documentation
+(3)	Generate the service contract
+Wsdl Parser
+(1)	Pass in a WSDL
+(2)	Get an interface contract class
+Interface contract
+(1)	Get a list of operations and associated info
+Metadata Factory
+(1)	Download the metadata and reconstruct the wsdl to return an interface contract
+(2)	Dynamically generate a flat interface contract 
+
+`
