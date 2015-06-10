@@ -1,0 +1,12 @@
+/WSCF.Blue/source/**/*.user
+/WSCF.Blue/source/**/*.cache
+/WSCF.Blue/source/**/bin
+/WSCF.Blue/source/**/obj
+/WSCF.Blue/source/**/*.suo
+/WSCF.Blue/source/_UpgradeReport_Files
+/WSCF.Blue/source/UpgradeLog.XML
+/WSCF.Blue/source/UpgradeLog2.XML
+/WSCF.Blue/source/UpgradeLog3.XML
+/WSCF.Blue/source/UpgradeLog4.XML
+/WSCF.Blue/source/Setup/Debug
+/WSCF.Blue/source/**/*.DotSettings
